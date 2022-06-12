@@ -10,7 +10,7 @@ import SelectVariants from '../component/SelectVariants'
 import Pagination from '../component/Pagination'
 import ItemList from '../component/ItemList'
 import HeadBar from '../component/HeadBar'
-import ScrollTemp from '../component/ScrollTemp'
+import market from './blackmarket.png';
 
 import Button from '@mui/material/Button';
 import {AppBar,Toolbar,IconButton,Typography} from '@mui/material';
@@ -25,7 +25,7 @@ const Homepage = () => {
   return (
     <div>
       <HeadBar />
-      <img className="logo" alt='logo' src='../blackmarket.png'/>
+      <img className="mainlogo" alt='logo' src={market}/>
       <SearchBar />
       <SelectVariants />
       <ItemList />
