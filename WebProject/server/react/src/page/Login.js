@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 
 import Signup from './SignUp';
 
+import axios from 'axios'
+
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
@@ -23,39 +25,27 @@ export default function Login() {
         setIdError(false);
     };
 
-    const onLogIn = (e) => {
-        e.preventDefault();
-
-        if (!id) {
-            return setIdError(true);
-        }
-        if (!password) {
-            return setPasswordError(true);
-        }
-
-        axios.post("http://localhost:3001/Login", {
-            Id: id,
-            Passwrd: password
-        })
-        .then(response => console.log(response), navigate("./check"))
-        .catch(error => console.log(error.response))
-    };
-
     const onChangePassword = (e) => {
         setPassword(e.target.value);
         setPasswordError(false);
     };
 
     const onLogIn = (e) => {
-        e.preventDefault();
+      e.preventDefault();
 
-        if (!id) {
-            return setIdError(true);
-        }
-        if (!password) {
-            return setPasswordError(true);
-        }
-        navigate("/",{state:"LOGOUT"});
+      if (!id) {
+          return setIdError(true);
+      }
+      if (!password) {
+          return setPasswordError(true);
+      }
+
+      axios.post("http://localhost:3001/Login", {
+          Id: id,
+          Passwrd: password
+      })
+      .then(response => console.log(response), navigate("./"))
+      .catch(error => console.log(error.response))
     };
 
     const toMain_WO_LogIn = (e) => {
