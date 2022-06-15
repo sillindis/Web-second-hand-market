@@ -43,6 +43,33 @@ export default function Signup() {
         setIdError(false);
     };
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+        /**검증 로직 만들기
+         * 1. 비밀번호와 비밀번호 체크가 다를 경우를 검증한다
+         * 2. 약관 동의를 확인한다.
+         */
+        if (!id) {
+            return setIdError(true);
+        }
+        if(password !== passwordCheck){
+            return setPasswordError(true);
+        }
+        if(!term){
+            return setTermError(true);
+        }
+
+        axios.post("http://localhost:3001/check", {
+            Id: id,
+            Passwrd: password,
+        }).then(response => console.log(response))
+        .catch(error => console.log(error.response), alert("회원가입이 완료되었습니다."))
+        handleClose();
+    };/*
+    alert("이미 존재하는 아이디입니다.")
+    alert("회원가입이 완료되었습니다.")
+    */
+
     const onChangePassword = (e) => {
         setPassword(e.target.value);
     };
