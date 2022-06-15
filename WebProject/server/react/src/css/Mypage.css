@@ -1,0 +1,85 @@
+.Title{
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0);
+}
+
+.ID{
+  position: fixed;
+  left: 30%;
+  top: 20%;
+  transform: translate(-50%, 0);
+}
+
+.Registration_Icon{
+  position: fixed;
+  left: 30%;
+  top: 450px;
+  transform: translate(-50%, 0);
+}
+
+.Registration{
+  position: fixed;
+  left: 30%;
+  top: 40%;
+  transform: translate(-50%, 0);
+}
+
+.Deal_Icon{
+  position: fixed;
+  left: 47%;
+  top: 450px;
+  transform: translate(-50%, 0);
+}
+
+.Deal{
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 0);
+}
+
+.Wish_Icon{
+  position: fixed;
+  left: 64%;
+  top: 450px;
+  transform: translate(-50%, 0);
+}
+
+.Wish{
+  position: fixed;
+  left: 70%;
+  top: 40%;
+  transform: translate(-50%, 0);
+}
+
+.Request{
+  position: fixed;
+  left: 41%;
+  top: 730px;
+  width: 550px;
+  transform: translate(-50%, 0);
+}
+
+.Change{
+  position: fixed;
+  left: 23%;
+  top: 800px;
+  width: 550px;
+  transform: translate(-50%, 0);
+}
+
+.Secession{
+  position: fixed;
+  left: 5.5%;
+  top: 900px;
+  transform: translate(-50%, 0);
+}
+
+.Back{
+  position: fixed;
+  left: 10%;
+  top: 900px;
+  transform: translate(-50%, 0);
+}

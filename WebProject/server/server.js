@@ -14,18 +14,15 @@ app.listen(8080,function(){
   console.log('listening in 8080')
 })
 
-const db = require('./server');
+//const db = require('./server');
 
 app.get('/Login', (req, res) => {
     db.query("SELECT * FROM second-hand-market_db", (err, data) => {
         if(!err) res.send({ id: data });
-        else db.query("INSERT * FROM id data", (err, data));
+        else console.log(err);
     })
 })
 
-app.listen(PORT, () => {
-    console.log(`Server On : http://localhost:${PORT}/`);
-})
 
 app.use(express.json());
 var cors=require('cors');

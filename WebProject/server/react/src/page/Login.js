@@ -1,8 +1,10 @@
 import "../App.css"
+import '../Login.css';
 
 import React, { useState } from 'react';
-import '../Login.css';
+
 import Signup from './SignUp';
+
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';

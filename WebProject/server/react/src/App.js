@@ -8,13 +8,19 @@ import "./App.css"
 
 import Homepage from './page/Homepage';
 import Login from './page/Login';
+import Mypage from './page/Mypage';
+import Registration from './page/Registration';
 
 function App() {
   return(
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/Login" element={<Login />} />
-    </Routes>
+    <div>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Mypage" element={<Mypage />} />
+        <Route path="/Mypage/Registration" element={<Registration />} />
+      </Routes>
+    </div>
   );
 }
 
