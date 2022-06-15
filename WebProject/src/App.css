@@ -1,0 +1,36 @@
+.logo{
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 10%;
+}
+
+.searchBar{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 25%;
+}
+
+.selectVariants{
+  position: absolute;
+  left: 20%;
+  transform: translate(-50%, 0);
+  top: 40%;
+}
+
+.itemList{
+  position: absolute;
+  left: 17%;
+  top: 50%;
+}
+
+.pagination{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 5%;
+}
