@@ -1,7 +1,8 @@
-import * as React from "react";
-import "../App.css"
+import React , { useState } from 'react';
+import "../css/HeadBar.css"
 
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -11,7 +12,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Grid from '@mui/material/Grid';
 import Modal from '@mui/material/Modal'
 
+import Login from '../page/Login';
+
 export default function Head() {
+  const location = useLocation();
+  const login=location.state;
 
   return (
     <div className="side-bar">
@@ -23,6 +28,7 @@ export default function Head() {
           <Typography variant="h6" color="inherit" component="div">
             blackmarket
           </Typography>
+
           <Grid container justifyContent="flex-end">
             <Button className="menu-sell" color="inherit" size="large">판매하기</Button>
 
@@ -32,11 +38,12 @@ export default function Head() {
               </Link>
             </Button>
 
-            <Button className="menu-login" color="inherit" size="large">
-              <Link to="/Login" style={{ textDecoration: 'none', color: 'white' }}>
-                Login
-              </Link>
-            </Button>
+            <Link to="/Login"  style={{ textDecoration: 'none', color: 'white' }}>
+              <Button className="menu-login" color="inherit" size="large">
+                { login==null ? <p>LOGIN</p> : <p>LOGOUT</p>}
+              </Button>
+            </Link>
+
           </Grid>
         </Toolbar>
       </AppBar>

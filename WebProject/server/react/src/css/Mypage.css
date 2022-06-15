@@ -1,8 +1,7 @@
-.Title{
+.TitleMypage{
   position: fixed;
   left: 50%;
   top: 10%;
-  transform: translate(-50%, 0);
 }
 
 .ID{
@@ -77,9 +76,8 @@
   transform: translate(-50%, 0);
 }
 
-.Back{
-  position: fixed;
-  left: 10%;
-  top: 900px;
-  transform: translate(-50%, 0);
+.BackMypage{
+  position: absolute;
+  left: 20%;
+  top: 100%;
 }

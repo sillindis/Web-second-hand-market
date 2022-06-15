@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
 import market from './blackmarket.png';
+import { Navigate } from 'react-router-dom';
 
 export default function Login() {
     const navigate = useNavigate();
@@ -36,8 +37,7 @@ export default function Login() {
         if (!password) {
             return setPasswordError(true);
         }
-        navigate("/"); // routing
-
+        navigate("/",{state:"LOGOUT"});
     };
 
     const toMain_WO_LogIn = (e) => {

@@ -34,7 +34,7 @@ export default function Login() {
       <Button className="Request" color="inherit" size="large" variant="outlined">나의 문의사항</Button>
       <Button className="Change" color="inherit" size="large" variant="outlined">희망거래지역변경</Button>
       <Button className="Secession" color="error" size="large" variant="contained">회원탈퇴</Button>
-      <Button className="Back" size="large" variant="contained">
+      <Button className="BackMypage" size="large" variant="contained">
       <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
         뒤로가기
       </Link>

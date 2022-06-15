@@ -33,5 +33,5 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: -10%;
+  top: 100%;
 }
