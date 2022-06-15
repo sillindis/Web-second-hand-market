@@ -21,6 +21,7 @@ export default function Registration() {
 
   return (
     <div>
+      <h1 className="TitleRe">등록한 물품</h1>
       <div className="item1">
         <Paper sx={{ p: 2,margin: 'auto',maxWidth: 700, flexGrow: 1,backgroundColor: (theme) =>  theme.palette.mode === 'dark'?'#1A2027':'#fff'}}>
         <Grid container spacing={2}>
@@ -43,7 +44,7 @@ export default function Registration() {
       </Paper>
 
       </div>
-      <h1 className="Title">등록한 물품</h1>
+
       <Button className="BackRe" size="large" variant="contained">
         <Link to="/Mypage" style={{ textDecoration: 'none', color: 'white' }}>
           뒤로가기

@@ -6,12 +6,13 @@
 }
 .TitleRe{
   position: fixed;
-  left: 50%;
+  left: 42%;
   top: 10%;
+  transform: translate(100%, 0);
 }
 .BackRe{
   position: fixed;
   left: 50%;
-  transform: translate(-50%, 0);
-  top: 50%;
+  transform: translate(-50%, 1500%);
+  top: 100%;
 }

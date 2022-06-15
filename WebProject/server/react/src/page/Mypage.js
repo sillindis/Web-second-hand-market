@@ -17,8 +17,8 @@ export default function Login() {
 
   return (
     <div>
-      <h1 className="Title">Mypage</h1>
-      <h2 className="ID">ID: aa</h2>
+      <h1 className="TitleMypage">Mypage</h1>
+      <h2 className="ID">ID: a</h2>
       <IconButton className="Registration_Icon" style={{ color: 'black' }} component={Link} to="/Mypage/Registration">
         <AddCircleIcon sx={{ fontSize: 70 }}/>
       </IconButton>
